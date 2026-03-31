@@ -44,28 +44,29 @@ Usuario (lenguaje natural)
 ## 🚀 Cómo ejecutarlo
 
 **1. Clona el repositorio**
-\```bash
-git clone https://github.com/TU_USUARIO/agente-analizador-datos.git
+```bash
+git clone https://github.com/VPWEB/agente-analizador-datos.git
 cd agente-analizador-datos
-\```
+```
 
 **2. Crea el entorno virtual e instala dependencias**
-\```bash
+```bash
 python -m venv venv
 venv\Scripts\activate
-pip install anthropic pandas streamlit
-\```
+pip install anthropic pandas streamlit python-dotenv
+```
 
 **3. Configura tu API key de Anthropic**
-\```bash
-# En app.py, añade tu clave en la línea del cliente
-client = anthropic.Anthropic(api_key="sk-ant-...")
-\```
+
+Crea un archivo `.env` en la raíz del proyecto:
+```
+ANTHROPIC_API_KEY=sk-ant-tu_clave_aqui
+```
 
 **4. Ejecuta la aplicación**
-\```bash
+```bash
 streamlit run app.py
-\```
+```
 
 ## 🧰 Stack técnico
 
